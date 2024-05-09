@@ -1,0 +1,580 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+div.container {
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #07396b;
+    
+}
+
+header p#logo {
+    cursor: pointer;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+header .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+header .options a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    transition: 0.4s;
+   
+}
+
+header .options a::after {
+    transition: 0.4s;
+    content: '';
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    width: 0%;
+    bottom: -5px;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+header .options a:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    text-align: center;
+    left: 0%;
+    width: 100%;
+    bottom: -5px;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+header .options form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .options form input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-right: none;
+    color: white;
+    font-weight: 550;
+}
+
+header .options form input::placeholder {
+    color: white;
+    font-weight: 550;
+}
+
+
+header .options form i {
+    border: 2px solid white;
+    border-left: none;
+    color: white;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+header .options i#cart {
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+header .options i#cart:hover {
+    color: #014ba0;
+    font-size: 1.5em;
+}
+
+header .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+header .login:hover {
+    background-color: white;
+}
+
+header .login:hover i, header .login:hover p{
+    color: #1466c3;
+}
+
+header .login i {
+    color: white;
+}
+
+header .login p {
+    color: white;
+    font-weight: 550;
+}
+
+.tópico {
+    color: #1466c3;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.swiper {
+    height:100vh;
+    .swiper-slide {
+        background-color: #07396b;
+        color: white;
+        font-weight: 500;
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+.swiperdeobras {
+    height: 500px;
+    .swiper-slide {
+        background-color: #07396b;
+        color: white;
+        font-weight: 500;
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+div.companyinformations {
+    height: 200px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.companyinformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+div.companyinformation p {
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+div.companyinformation .information p {
+    font-weight: 500;
+}
+
+.swiper#events {
+   
+    margin: 40px;
+    background-color: #07396b;
+    height: 500px;
+    border-radius: 10px;
+    .swiper-slide {
+        background-color: transparent;
+        color:white;
+        font-weight: 500;
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+.bordaswiperslide {
+    
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.imagemdaobra {
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #014ba0, #07396b);
+    width: 100%;
+    height: 190px;
+}
+
+#swiper-slide-obra.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 40px;
+    
+}
+
+.bordaswiperslide:hover {
+    background-color: #babbbe86;
+}
+
+.bordaswiperslide:hover .botãoparacontratar {
+    background-image: linear-gradient(to left, #014ba0, #07396b);;
+}
+
+.bordaswiperslide:hover .botãoparacontratar {
+    color: white;
+}
+
+p#titulodocontrato{    
+    padding-left: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.preçodocontrato {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.preçodocontrato p#pix {
+    color: #014ba0;
+}
+
+.preçodocontrato p#cartão {
+    color: #6B7280;
+}
+
+#cartãodocontrato {
+    font-size: 14px;
+}
+
+.botãoparacontratar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    background-color: #F7F7F7;
+    padding: 16px 0px;
+    color: #014ba0;
+    width: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 10px;
+    color: white !important;
+}
+
+div.promoções {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+div.maiorpromoção {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #07396b;
+}
+
+div.menorpromoção {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    gap: 10px;
+}
+
+div#menorpromoção {
+    width: 600px;
+    border-radius: 10px;
+    height: 250px;
+    background-color: #07396b;
+}
+
+div.segmentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 100px;
+    gap: 20px;
+}
+
+div.segmento {
+    background-image: linear-gradient(to left, #07396b, #014ba0);
+    color: white;
+    font-weight: 600;
+    padding: 25px 80px;
+    border-radius: 16px;
+    transition: 0.4s;
+}
+
+div.segmento:hover {
+    background-image: linear-gradient(to left, #014ba0, #07396b);
+}
+
+div.contratosadicionais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+div.contratosmenores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 500px;
+    width: 500px;
+}
+
+div.contratomaior {
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #07396b;
+}
+
+div.areadecontratosmenores {
+    display: flex;
+    gap: 10px;
+    width: 500px;
+    height: 250px;
+}
+
+div.contratomenor {
+    width: 250px;
+    border-radius: 10px;
+    background-color: #07396b;
+}
+
+div.contratomenorlargo {
+    height: 250px;
+    border-radius: 10px;
+    width: 500px;
+    background-color: #07396b;
+}
+
+div.anúncio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    background-color: #07396b;
+    margin: 40px;
+    border-radius: 16px;
+}
+
+div.assinaturas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    width: 100%;
+    gap: 75px;
+}
+
+div.assinatura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding-bottom: 20px;
+    gap: 20px;
+    flex-direction: column;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.300);
+    border-radius: 10px;
+}
+
+div.imagemdaassinatura {
+    width: 400px;
+    height: 300px;
+    background-image: linear-gradient(to left, #014ba0, #07396b);
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+a.botãodeassinatura {
+    background-image: linear-gradient(to left, #014ba0, #07396b);
+    padding: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+a.botãodeassinatura:hover {
+    background-image: linear-gradient(to left, #07396b, #014ba0);
+}
+
+i#simbolodeassinatura {
+    font-size: 2.4em;
+    color: #07396b;
+}
+
+p#titulodaassinatura {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+p#descricaodaassinatura {
+    color: #737373;
+    font-weight: 550;
+}
+
+.areadepreçodaassinatura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preçodaassinatura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #07396b;
+}
+
+s {
+    margin: -10px;
+    color: #A3A3A3;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.beneficio {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+}
+
+.beneficio i {
+    color: #07396b;
+}
+
+.beneficio .descriçãodobeneficio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 550;
+}
+
+.anúnciomaior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    background-color: #07396b;
+    margin: 40px;
+    border-radius: 16px;
+}
+
+div.orçamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+}
+
+div.orçamento form {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+div.orçamento form div {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+div.orçamento form div input {
+    border: none;
+    outline: none;
+    padding: 18px;
+    width: 500px;
+    background-color: #E5E5E5;
+    color: gray;
+    border-radius: 10px;
+}
+
+button {
+    background-image: linear-gradient(to left, #014ba0, #07396b);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 12px;
+    width: 50%;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-image: linear-gradient(to left, #07396b, #014ba0);
+}
+
+div.marca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
